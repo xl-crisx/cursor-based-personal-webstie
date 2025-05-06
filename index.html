@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简介</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <div class="background-animation">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+        <div class="circle circle-4"></div>
+        <div class="circle circle-5"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#projects">作品展示</a></li>
+                <li><a href="#contact">联系方式</a></li>
+            </ul>
+            <div class="avatar-container">
+                <img src="vxtx.jpg" alt="头像" class="avatar">
+                <div class="dropdown-menu">
+                    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://gitee.com" target="_blank"><i class="fab fa-gitee"></i> Gitee</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="animate-text">欢迎来到我的个人空间</h1>
+            <p class="animate-text">前端开发工程师 | UI/UX 设计师</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary">查看作品</a>
+                <a href="#contact" class="btn secondary">联系我</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="decorative-dots"></div>
+        <h2>关于我</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p class="intro-text">我是一名充满热情的前端开发者，专注于创建美观且用户友好的网站。我热爱学习新技术，并且善于将创意转化为现实。</p>
+                <div class="about-details">
+                    <div class="detail-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="detail-content">
+                            <h4>教育背景</h4>
+                            <p>计算机科学与技术 | 本科</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-briefcase"></i>
+                        <div class="detail-content">
+                            <h4>工作经历</h4>
+                            <p>3年+ 前端开发经验</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-code"></i>
+                        <div class="detail-content">
+                            <h4>技术栈</h4>
+                            <p>Vue.js | React | Node.js</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h3>技能专长</h3>
+                    <div class="skill-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Vue.js</span>
+                        <span>Node.js</span>
+                        <span>UI/UX</span>
+                        <span>Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>作品展示</h2>
+        <div class="project-grid">
+            <div class="project-card" onclick="window.open('https://gitee.com/sheriffxl/vue3-vite-cms.git', '_blank')">
+                <div class="project-info">
+                    <h3>vue3-vite-cms</h3>
+                    <p>基于vue3+vite+pinia等技术栈开发的一款后台管理系统</p>
+                    <div class="project-links">
+                        <a href="https://gitee.com/sheriffxl/vue3-vite-cms.git" class="btn small" target="_blank">查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card more-projects">
+                <div class="more-content">
+                    <i class="fas fa-arrow-right"></i>
+                    <h3>查看更多</h3>
+                    <p>浏览更多作品展示</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>联系方式</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>email@example.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+86 123 4567 8900</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>中国，北京</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="social-links-fixed">
+        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-weibo"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-qq"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-weixin"></i></a>
+    </div>
+
+    <footer>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
